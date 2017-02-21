@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Under the Sea</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript" src="libraries/aframe.min.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/aframep5.js"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <style>
+      body {padding: 0; margin: 0;}
+      canvas {vertical-align: top;} 
+    </style>
+
+  </head>
+  <body>
+    <a-scene id="VRScene">
+      
+      <a-assets id="VRAssets">
+        <img src="images/underwater.jpg" id="sky" />
+        <img src="images/ripple.jpg" id="ripple-texture" />
+
+        <img src="images/sebas.png" id="sebas" />
+        <img src="images/daggers.png" id="daggers" />
+        <img src="images/yellowfish.png" id="yellowfish" />
+
+        <img src="images/blackhole.jpg" id="blackhole" />
+
+        <audio id='under-the-sea' src="music/underthesea.mp3" />
+        <audio id='youch' src="music/youch.mp3" />
+        <audio id='touchthat' src="music/touchthat.mp3" />
+
+        <audio id='cast' src="music/cast.wav" />
+        <audio id='drum' src="music/drum.mp3" />
+        <audio id='tada' src="music/tada.mp3" />
+
+        <a-asset id="funkyfish_obj" src="images/funkyfish/model.obj"></a-asset>
+        <a-asset id="funkyfish_mtl" src="images/funkyfish/model.mtl"></a-asset>
+        <a-asset id="clownfish_obj" src="images/clownfish/model.obj"></a-asset>
+        <a-asset id="clownfish_mtl" src="images/clownfish/model.mtl"></a-asset>
+        <a-asset id="jellyfish_obj" src="images/jellyfish/model.obj"></a-asset>
+        <a-asset id="jellyfish_mtl" src="images/jellyfish/model.mtl"></a-asset>
+        <a-asset id="shark_obj" src="images/shark/model.obj"></a-asset>
+        <a-asset id="shark_mtl" src="images/shark/model.mtl"></a-asset>
+        <a-asset id="starfish_obj" src="images/starfish/model.obj"></a-asset>
+        <a-asset id="starfish_mtl" src="images/starfish/model.mtl"></a-asset>
+        <a-asset id="redfish_obj" src="images/redfish/model.obj"></a-asset>
+        <a-asset id="redfish_mtl" src="images/redfish/model.mtl"></a-asset>
+        <!--<a-asset id="tuna_obj" src="images/tuna/model.obj"></a-asset>
+        <a-asset id="tuna_mtl" src="images/tuna/model.mtl"></a-asset>-->
+        <a-asset id="silverfish_obj" src="images/silverfish/model.obj"></a-asset>
+        <a-asset id="silverfish_mtl" src="images/silverfish/model.mtl"></a-asset>
+
+      </a-assets>
+      
+      <a-sky src="#sky"></a-sky>
+      
+    </a-scene>
+  </body>
+</html>
